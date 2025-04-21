@@ -1,26 +1,21 @@
+@import "@fontsource/inter/latin.css";
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --font-sans: 'Inter', sans-serif;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  --color-primary: #F3F3F3;
+  --color-secondary: #AFAFAF;
+  --color-tertiary: #5C5C5C;
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --bg-default: #1B1C21;
+  --bg-surface: #2A2B31;
+  --bg-muted: #18191D;
+
+  --surface-2: #2B2C33;
+  --surface-3: #34353D;
+
+  --text-secondary: #AFAFAF;
+  --text-muted: #5C5C5C;
 }
