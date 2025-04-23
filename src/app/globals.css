@@ -2,20 +2,19 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Inter', sans-serif;
-
+  --font-sans: "Inter", sans-serif;
 
   --color-primary: #F3F3F3;
   --color-secondary: #AFAFAF;
   --color-tertiary: #5C5C5C;
 
-  --bg-default: #1B1C21;
-  --bg-surface: #2A2B31;
-  --bg-muted: #18191D;
+  --color-bg-default: #1B1C21;
+  --color-bg-surface: #2A2B31;
+  --color-bg-muted: #18191D;
 
-  --surface-2: #2B2C33;
-  --surface-3: #34353D;
+  --color-surface-2: #2B2C33;
+  --color-surface-3: #34353D;
 
-  --text-secondary: #AFAFAF;
-  --text-muted: #5C5C5C;
+  --color-text-secondary: #AFAFAF;
+  --color-text-muted: #5C5C5C;
 }

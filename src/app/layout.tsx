@@ -1,18 +1,16 @@
-import './globals.css';
+import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
-  title: 'Conley Tjahjono | Frontend Portfolio',
-  description: 'Frontend Developer with a UX Mindset',
+  title: "Conley Tjahjono | Frontend Portfolio",
+  description: "Frontend Developer with a UX Mindset",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="font-sans bg-[theme(colors.bg-default)] text-[theme(colors.color-primary)]">
+      <body className="font-sans bg-[theme(colors.bg-default)] text-[theme(colors.primary)]">
+        <Navbar />
         {children}
       </body>
     </html>
