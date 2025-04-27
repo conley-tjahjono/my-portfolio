@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className="font-sans bg-[theme(colors.bg-default)] text-[theme(colors.primary)]">
         <Navbar />
         {children}
