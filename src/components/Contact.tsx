@@ -13,7 +13,7 @@ const Contact = () => {
       transition={{ duration: 0.6 }}
     >
       <motion.div
-        className="flex justify-between max-w-xl md:max-w-6xl mx-auto px-7 md:px-10 py-8 md:py-24 gap-12"
+        className="flex justify-between max-w-xl md:max-w-6xl mx-auto px-7 md:px-10 py-8 md:py-24 pb-1 md:pb-8 gap-12"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -93,6 +93,23 @@ const Contact = () => {
           </div>
         </motion.div>
       </motion.div>
+
+      <div className="relative w-full overflow-hidden py-4 bg-[theme(colors.bg-muted)]">
+        <motion.div
+          className="flex w-max"
+          animate={{ x: ['-30%', '30%'] }}
+          transition={{
+            repeat: Infinity,
+            repeatType: 'loop',
+            duration: 20,
+            ease: 'linear',
+          }}
+        >
+          <div className="whitespace-nowrap text-4xl md:text-8xl font-bold text-[theme(colors.text-muted)]">
+            {"LETS CONNECT  •  ".repeat(10)}
+          </div>
+        </motion.div>
+      </div>
     </motion.section>
   );
 };
