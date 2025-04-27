@@ -35,16 +35,17 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="space-x-2 text-xs md:space-x-6 md:text-sm lg:text-xl font-semibold"
+          className="flex justify-between space-x-2 text-xs md:space-x-6 md:text-sm lg:text-xl font-semibold"
         >
           <motion.span
-            className="text-[theme(colors.text-primary)] mr-15 inline-block"
+            className="text-[theme(colors.text-primary)] inline-block"
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
             social.
           </motion.span>
+          <div className="space-x-2">
           {contactSocials.map(({ label, href }, index) => (
             <motion.a
               key={label}
@@ -59,6 +60,7 @@ const Hero = () => {
               {label}
             </motion.a>
           ))}
+          </div>
         </motion.div>
       </motion.div>
 
