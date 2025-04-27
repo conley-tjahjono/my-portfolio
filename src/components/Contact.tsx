@@ -69,10 +69,22 @@ const Contact = () => {
             <motion.p className="font-bold text-base lg:text-2xl" variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>Conley Tjahjono</motion.p>
             <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>New York, NY</motion.p>
           </div>
-          <div>
-            <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>conleytjahjono2@gmail.com</motion.p>
-            <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>+1(562)3772110</motion.p>
-          </div>
+          <div className="flex flex-col items-end">
+  <motion.a
+    href="mailto:conleytjahjono2@gmail.com"
+    className="hover:underline"
+    variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+  >
+    conleytjahjono2@gmail.com
+  </motion.a>
+  <motion.a
+    href="tel:+15623772110"
+    className="hover:underline"
+    variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+  >
+    +1(562)3772110
+  </motion.a>
+</div>
         </motion.div>
       </motion.div>
       
