@@ -19,7 +19,7 @@ const Skills = () => {
   const techStack = ["React", "Next.js", "Tailwind CSS", "Framer Motion", "Material UI", "Figma", "Angular", "Git", "Bootstrap", "Storybooks", "REST APIs", "Mongo DB", "MySQL"];
 
   return (
-    <motion.section className="max-w-5xl mx-auto px-6 py-24 text-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
+    <motion.section className="max-w-xl md:max-w-5xl mx-auto px-6 py-8 md:py-24 text-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
       <h3 className="text-xl font-semibold mb-6">Fluent In</h3>
       <div className="flex flex-wrap justify-center gap-4 mb-12">
         {fluentSkills.map((skill, index) => (

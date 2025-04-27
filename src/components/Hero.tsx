@@ -6,9 +6,9 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen px-10 flex flex-col md:flex-row items-center md:items-start justify-between max-w-6xl mx-auto gap-6 pt-[40px] md:pt-[50px] lg:pt-[120px]">
+    <section className="min-h-screen px-7 md:px-10 flex flex-col md:flex-row items-center md:items-start justify-between max-w-2xl md:max-w-6xl mx-auto gap-6 pt-[60px] md:pt-[60px] lg:pt-[120px]">
       <motion.div
-        className="flex-1 self-start content-center"
+        className="flex-0 md:flex-1 self-start content-center"
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
@@ -35,7 +35,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="flex justify-between space-x-2 text-xs md:space-x-6 md:text-sm lg:text-xl font-semibold"
+          className="flex flex-col space-y-2 justify-between text-xs md:space-y-0 md:flex-row md:space-x-6 md:text-sm lg:text-xl font-semibold"
         >
           <motion.span
             className="text-[theme(colors.text-primary)] inline-block"
@@ -45,7 +45,7 @@ const Hero = () => {
           >
             social.
           </motion.span>
-          <div className="space-x-2">
+          <div className="space-x-3  md:space-x-6">
           {contactSocials.map(({ label, href }, index) => (
             <motion.a
               key={label}

@@ -33,7 +33,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-24">
+    <section className="max-w-xl md:max-w-6xl mx-auto px-6 md:py-24">
       {projects.map((project, index) => (
         <div
           key={project.title}

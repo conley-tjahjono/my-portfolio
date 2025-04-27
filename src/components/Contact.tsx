@@ -13,7 +13,7 @@ const Contact = () => {
       transition={{ duration: 0.6 }}
     >
       <motion.div
-        className="flex justify-between max-w-6xl mx-auto px-6 py-24 gap-12"
+        className="flex justify-between max-w-xl md:max-w-6xl mx-auto px-6 py-8 md:py-24 gap-12"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
