@@ -52,7 +52,7 @@ const Contact = () => {
         </motion.div>
 
         <motion.div
-          className="text-sm text-right lg:text-xl"
+          className="flex flex-col justify-between text-sm text-right lg:text-xl"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -65,13 +65,17 @@ const Contact = () => {
             }
           }}
         >
-          <motion.p className="font-bold text-base lg:text-2xl" variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>Conley Tjahjono</motion.p>
-          <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>New York, NY</motion.p>
-          <motion.p className="mt-15" variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>conleytjahjono2@gmail.com</motion.p>
-          <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>+1(562)3772110</motion.p>
+          <div>
+            <motion.p className="font-bold text-base lg:text-2xl" variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>Conley Tjahjono</motion.p>
+            <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>New York, NY</motion.p>
+          </div>
+          <div>
+            <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>conleytjahjono2@gmail.com</motion.p>
+            <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>+1(562)3772110</motion.p>
+          </div>
         </motion.div>
       </motion.div>
-
+      
       <motion.div
         className="overflow-hidden py-4"
         initial={{ x: 0 }}
