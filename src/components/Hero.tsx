@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen px-7 md:px-10 flex flex-col md:flex-row items-center md:items-start justify-between max-w-2xl md:max-w-6xl mx-auto gap-6 pt-[60px] md:pt-[60px] lg:pt-[120px]">
+    <section className="portrait:max-h-screen landscape:min-h-screen px-7 md:px-10 flex flex-col landscape:flex-row md:flex-row items-center md:items-start justify-between max-w-2xl md:max-w-6xl mx-auto gap-6 pt-[60px] md:pt-[60px] lg:pt-[120px]">
       <motion.div
         className="flex-0 md:flex-1 self-start content-center"
         initial={{ opacity: 0, x: -30 }}
@@ -81,7 +81,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="mt-4 text-[theme(colors.text-secondary)] text-sm text-center font-light max-w-xs md:text-right md:text-base"
+          className="mt-4 text-[theme(colors.text-secondary)] text-sm text-center landscape:text-right font-light max-w-xs md:text-right md:text-base"
         >
           Hi I’m Conley Tjahjono, a Frontend Engineer crafting intuitive experiences
         </motion.p>
