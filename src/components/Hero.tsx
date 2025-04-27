@@ -17,7 +17,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-5xl font-extrabold leading-[1.1] md:text-6xl lg:text-8xl"
+          className="text-5xl tracking-wider font-extrabold leading-[1.1] md:text-6xl lg:text-8xl"
         >
           <span className="block">FRONTEND</span>
           <span className="block">DEVELOPER</span>
@@ -45,14 +45,14 @@ const Hero = () => {
           >
             social.
           </motion.span>
-          <div className="space-x-3  md:space-x-6">
+          <div className="space-x-3 md:space-x-6">
           {contactSocials.map(({ label, href }, index) => (
             <motion.a
               key={label}
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline inline-block"
+              className="hover:underline uppercase tracking-wider inline-block"
               download={label === "RESUME" ? "Conley-Tjahjono-Resume.pdf" : undefined}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}

@@ -38,7 +38,7 @@ const Contact = () => {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="hover:underline tracking-wider uppercase"
                 download={label === "RESUME" ? "Conley-Tjahjono-Resume.pdf" : undefined}
               >
                 {label}
@@ -97,7 +97,7 @@ const Contact = () => {
       <div className="relative w-full overflow-hidden py-4 bg-[theme(colors.bg-muted)]">
         <motion.div
           className="flex w-max"
-          animate={{ x: ['-30%', '30%'] }}
+          animate={{ x: ['-20%', '0%'] }}
           transition={{
             repeat: Infinity,
             repeatType: 'loop',
@@ -105,7 +105,7 @@ const Contact = () => {
             ease: 'linear',
           }}
         >
-          <div className="whitespace-nowrap text-4xl md:text-8xl font-bold text-[theme(colors.text-muted)]">
+          <div className="whitespace-nowrap text-4xl uppercase tracking-wider md:text-8xl font-bold text-[theme(colors.text-muted)]">
             {"LETS CONNECT  •  ".repeat(10)}
           </div>
         </motion.div>
