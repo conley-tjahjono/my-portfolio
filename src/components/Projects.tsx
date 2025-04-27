@@ -4,25 +4,25 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const projects = [
   {
-    title: 'Student Job Portal',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    tags: ['Figma', 'React', 'Tailwind CSS'],
-  },
-  {
     title: 'Goal Tracking',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    tags: ['Figma', 'React', 'Tailwind CSS'],
+    description: 'A web application for teachers of deaf students to track their student’s Individualized Education Program goals',
+    tags: ['HTML', 'CSS', 'NodeJS', 'Javascript', 'MongoDB'],
   },
   {
-    title: 'Dress My Style',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    tags: ['Figma', 'React', 'Tailwind CSS'],
+    title: 'Student Job Portal',
+    description: 'A web appplication for students to fill out relative coursework and work experience to match respective jobs and internships',
+    tags: ['HTML', 'CSS', 'MySQL', 'PHP'],
   },
-  {
-    title: 'Letterbox Revamp',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    tags: ['Figma', 'React', 'Tailwind CSS'],
-  },
+  // {
+  //   title: 'Dress My Style',
+  //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  //   tags: ['Figma', 'React', 'Tailwind CSS'],
+  // },
+  // {
+  //   title: 'Letterbox Revamp',
+  //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  //   tags: ['Figma', 'React', 'Tailwind CSS'],
+  // },
 ];
 
 const Projects = () => {
@@ -74,7 +74,7 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className="bg-[theme(colors.surface-2)] text-[theme(colors.text-secondary)] flex items-center justify-center rounded-xl h-48 w-full">
-                  <span className="font-semibold">Demo Preview</span>
+                  <span className="font-semibold">Demo WIP</span>
                 </div>
               </motion.div>
             )}
