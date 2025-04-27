@@ -40,7 +40,7 @@ const Projects = () => {
           className="border-b border-[theme(colors.surface-2)] py-4 cursor-pointer"
           onClick={() => toggleProject(index)}
         >
-          <div className={`flex flex-wrap items-center justify-between gap-2 transition-colors ${openIndex === index ? 'text-[theme(colors.primary)]' : 'text-[theme(colors.text-muted)]'} hover:text-[theme(colors.text-secondary)]`}>
+          <div className={`flex flex-wrap items-center justify-between gap-2 transition-colors ${openIndex === index ? 'text-[theme(colors.primary)]' : 'text-[theme(colors.text-muted)] opacity-70 hover:text-[theme(colors.text-secondary)] hover:opacity-100'}`}>
             <h3 className="text-lg font-bold text-left">
               {project.title}
             </h3>
