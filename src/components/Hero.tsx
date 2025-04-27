@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="portrait:max-h-screen landscape:min-h-screen px-7 md:px-10 flex flex-col landscape:flex-row md:flex-row items-center md:items-start justify-between max-w-xl md:max-w-6xl mx-auto gap-6 pt-[60px] md:pt-[60px] lg:pt-[120px]">
+    <section className="portrait:max-h-screen landscape:min-h-screen px-7 md:px-10 flex flex-col landscape:flex-row md:flex-row items-center landscape:items-start justify-between max-w-xl md:max-w-6xl mx-auto gap-6 pt-[60px] md:pt-[60px] lg:pt-[120px]">
       <motion.div
         className="flex-0 md:flex-1 self-start content-center"
         initial={{ opacity: 0, x: -30 }}
