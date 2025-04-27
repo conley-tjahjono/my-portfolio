@@ -10,16 +10,14 @@ export default function Home() {
         <Hero />
       </section>
       <section id="projects" className="scroll-mt-24 md:scroll-mt-32 lg:scroll-mt-40">
-  <Projects />
-</section>
-
-<section id="skills" className="scroll-mt-24 md:scroll-mt-32 lg:scroll-mt-40">
-  <Skills />
-</section>
-
-<section id="contact" className="scroll-mt-24 md:scroll-mt-32 lg:scroll-mt-40">
-  <Contact />
-</section>
+        <Projects />
+      </section>
+      <section id="skills" className="scroll-mt-24 md:scroll-mt-32 lg:scroll-mt-40">
+        <Skills />
+      </section>
+      <section id="contact" className="scroll-mt-24 md:scroll-mt-32 lg:scroll-mt-40">
+        <Contact />
+      </section>
     </main>
   );
 }
