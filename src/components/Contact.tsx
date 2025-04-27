@@ -26,19 +26,25 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
         >
           <ul className="space-y-0 text-sm lg:text-xl font-bold">
-            {contactSocials.map(({ label, href }, index) => (
-              <motion.li
-                key={label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+          {contactSocials.map(({ label, href }, index) => (
+            <motion.li
+              key={label}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+                download={label === "RESUME" ? "Conley-Tjahjono-Resume.pdf" : undefined}
               >
-                <a href={href} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                  {label}
-                </a>
-              </motion.li>
-            ))}
+                {label}
+              </a>
+            </motion.li>
+          ))}
           </ul>
           <motion.p
             initial={{ opacity: 0, x: -20 }}
@@ -70,21 +76,21 @@ const Contact = () => {
             <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>New York, NY</motion.p>
           </div>
           <div className="flex flex-col items-end">
-  <motion.a
-    href="mailto:conleytjahjono2@gmail.com"
-    className="hover:underline"
-    variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
-  >
-    conleytjahjono2@gmail.com
-  </motion.a>
-  <motion.a
-    href="tel:+15623772110"
-    className="hover:underline"
-    variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
-  >
-    +1(562)3772110
-  </motion.a>
-</div>
+            <motion.a
+              href="mailto:conleytjahjono2@gmail.com"
+              className="hover:underline"
+              variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+            >
+              conleytjahjono2@gmail.com
+            </motion.a>
+            <motion.a
+              href="tel:+15623772110"
+              className="hover:underline"
+              variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+            >
+              +1(562)3772110
+            </motion.a>
+          </div>
         </motion.div>
       </motion.div>
       
