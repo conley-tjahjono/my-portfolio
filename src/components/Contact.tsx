@@ -76,6 +76,7 @@ const Contact = () => {
         </motion.div>
       </motion.div>
       
+      <div className="max-w-xl md:max-w-6xl mx-auto">
       <motion.div
         className="overflow-hidden py-4"
         initial={{ x: 0 }}
@@ -83,9 +84,11 @@ const Contact = () => {
         transition={{ repeat: Infinity, duration: 10, ease: 'linear' }}
       >
         <div className="whitespace-nowrap text-[theme(colors.text-muted)] text-4xl font-bold">
-          LETS CONNECT &nbsp; LETS CONNECT &nbsp; LETS CONNECT &nbsp; LETS CONNECT &nbsp;
+          LETS CONNECT &nbsp; LETS CONNECT &nbsp; LETS CONNECT
         </div>
       </motion.div>
+      </div>
+      
     </motion.section>
   );
 };
