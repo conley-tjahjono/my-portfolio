@@ -18,11 +18,11 @@ const projects = [
   //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   //   tags: ['Figma', 'React', 'Tailwind CSS'],
   // },
-  // {
-  //   title: 'Letterbox Revamp',
-  //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  //   tags: ['Figma', 'React', 'Tailwind CSS'],
-  // },
+  {
+    title: 'Letterbox Revamp',
+    description: 'Redesigned the user experience and modernized the UI for a film review platform, focusing on accessibility, responsive design, and improved visual hierarchy.',
+    tags: ['Figma'],
+  },
 ];
 
 const Projects = () => {
