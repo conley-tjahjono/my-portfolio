@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 import Navbar from "@/components/Navbar";
 
 export const metadata = {
@@ -12,6 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-sans bg-[theme(colors.bg-default)] text-[theme(colors.primary)]">
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   );
