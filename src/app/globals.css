@@ -17,4 +17,7 @@
 
   --color-text-secondary: #AFAFAF;
   --color-text-muted: #5C5C5C;
+
+  --color-surface-strong: #2E2F36;
+  --color-surface-hover: #3A3B44;
 }

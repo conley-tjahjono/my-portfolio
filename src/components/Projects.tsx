@@ -1,20 +1,22 @@
 "use client"
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { GitHub } from 'react-feather';
+import { ExternalLink, GitHub } from 'react-feather';
 
 const projects = [
   {
     title: 'Goal Tracking',
     description: 'A web application for teachers of deaf students to track their student’s Individualized Education Program goals',
     tags: ['HTML', 'CSS', 'NodeJS', 'Javascript', 'MongoDB'],
-    url: 'https://github.com/purdue-epics-isd/TRACK'
+    url: 'https://github.com/purdue-epics-isd/TRACK',
+    productionUrl: ''
   },
   {
     title: 'Student Job Portal',
     description: 'A web appplication for students to fill out relative coursework and work experience to match respective jobs and internships',
     tags: ['HTML', 'CSS', 'MySQL', 'PHP'],
-    url: ''
+    url: '',
+    productionUrl: ''
   },
   // {
   //   title: 'Dress My Style',
@@ -25,7 +27,8 @@ const projects = [
     title: 'Letterbox Revamp',
     description: 'Redesigned the user experience and modernized the UI for a film review platform, focusing on accessibility, responsive design, and improved visual hierarchy.',
     tags: ['Figma'],
-    url: ''
+    url: '',
+    productionUrl: ''
   },
 ];
 
@@ -77,14 +80,25 @@ const Projects = () => {
                     {project.description}
                   </p>
 
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[theme(colors.surface)] text-[theme(colors.text-secondary)] hover:text-[theme(colors.text-primary)] hover:bg-[theme(colors.bg-muted)] transition"
-                  >
-                    <GitHub size={18} />
-                  </a>
+                  <div className='flex space-x-2'>
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[theme(colors.surface-strong)] text-[theme(colors.text-secondary)] hover:text-[theme(colors.text-primary)] hover:bg-[theme(colors.surface-hover)] transition-colors duration-200"
+                      >
+                      <GitHub size={18} />
+                    </a>
+                    <a
+                      href={project.productionUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[theme(colors.surface-strong)] text-[theme(colors.text-secondary)] hover:text-[theme(colors.text-primary)] hover:bg-[theme(colors.surface-hover)] transition-colors duration-200"
+                      >
+                      <ExternalLink size={18} />
+                    </a>
+                  </div>
+                  
                 </div>
                 <div className="bg-[theme(colors.surface-2)] text-[theme(colors.text-secondary)] flex items-center justify-center rounded-xl h-48 w-full">
                   <span className="font-semibold">Demo WIP</span>
