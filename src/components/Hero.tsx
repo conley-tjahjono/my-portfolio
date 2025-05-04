@@ -53,12 +53,27 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline uppercase tracking-wider inline-block"
-              download={label === "RESUME" ? "Conley-Tjahjono-Resume.pdf" : undefined}
+              download={label.toUpperCase() === "RESUME" ? "Conley-Tjahjono-Resume.pdf" : undefined}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 + index * 0.1, duration: 0.5 }}
             >
-              {label}
+             {label.toUpperCase() === "RESUME" ? (
+              <motion.span
+                animate={{ scale: [1, 1.08, 1] }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  ease: "easeInOut",
+                }}
+                className="inline-block"
+              >
+                {label}
+              </motion.span>
+            ) : (
+              label
+            )}
             </motion.a>
           ))}
           </div>
