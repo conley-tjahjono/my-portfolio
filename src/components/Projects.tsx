@@ -5,6 +5,13 @@ import { ExternalLink, GitHub } from 'react-feather';
 
 const projects = [
   {
+    title: 'Dress My Style (WIP)',
+    description: 'A web application for organizing clothes and to provide AI clothing powered suggestions',
+    tags: ['HTML', 'CSS', 'NodeJS', 'Javascript', 'MongoDB'],
+    url: 'https://github.com/conley-tjahjono/dress-my-style',
+    productionUrl: 'https://dress-my-style.vercel.app/'
+  },
+  {
     title: 'Goal Tracking',
     description: 'A web application for teachers of deaf students to track their student’s Individualized Education Program goals',
     tags: ['HTML', 'CSS', 'NodeJS', 'Javascript', 'MongoDB'],
@@ -18,11 +25,6 @@ const projects = [
     url: '',
     productionUrl: ''
   },
-  // {
-  //   title: 'Dress My Style',
-  //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  //   tags: ['Figma', 'React', 'Tailwind CSS'],
-  // },
   {
     title: 'Letterbox Revamp',
     description: 'Redesigned the user experience and modernized the UI for a film review platform, focusing on accessibility, responsive design, and improved visual hierarchy.',
