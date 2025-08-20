@@ -5,9 +5,9 @@ import { ExternalLink, GitHub } from 'react-feather';
 
 const projects = [
   {
-    title: 'Dress My Style (WIP)',
+    title: 'Dress My Style',
     description: 'A web application for organizing clothes and to provide AI clothing powered suggestions',
-    tags: ['HTML', 'CSS', 'NodeJS', 'Javascript', 'MongoDB'],
+    tags: ['Figma', 'React', 'Next.js', 'Tailwind CSS', 'Typescript', 'Supabase'],
     url: 'https://github.com/conley-tjahjono/dress-my-style',
     productionUrl: 'https://dress-my-style.vercel.app/'
   },
@@ -18,20 +18,20 @@ const projects = [
     url: 'https://github.com/purdue-epics-isd/TRACK',
     productionUrl: ''
   },
-  {
-    title: 'Student Job Portal',
-    description: 'A web appplication for students to fill out relative coursework and work experience to match respective jobs and internships',
-    tags: ['HTML', 'CSS', 'MySQL', 'PHP'],
-    url: '',
-    productionUrl: ''
-  },
-  {
-    title: 'Letterbox Revamp',
-    description: 'Redesigned the user experience and modernized the UI for a film review platform, focusing on accessibility, responsive design, and improved visual hierarchy.',
-    tags: ['Figma'],
-    url: '',
-    productionUrl: ''
-  },
+  // {
+  //   title: 'Student Job Portal',
+  //   description: 'A web appplication for students to fill out relative coursework and work experience to match respective jobs and internships',
+  //   tags: ['HTML', 'CSS', 'MySQL', 'PHP'],
+  //   url: '',
+  //   productionUrl: ''
+  // },
+  // {
+  //   title: 'Letterbox Revamp',
+  //   description: 'Redesigned the user experience and modernized the UI for a film review platform, focusing on accessibility, responsive design, and improved visual hierarchy.',
+  //   tags: ['Figma'],
+  //   url: '',
+  //   productionUrl: ''
+  // },
 ];
 
 const Projects = () => {
