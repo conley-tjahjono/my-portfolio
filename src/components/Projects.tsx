@@ -6,7 +6,7 @@ import { ExternalLink, Figma, GitHub } from 'react-feather';
 const projects = [
   {
     title: 'Dress My Style',
-    description: 'A web application for organizing clothes and to provide AI clothing powered suggestions',
+    description: 'An AI-powered closet management and style recommendation app built with Next.js, Supabase, and OpenAI.',
     tags: ['Figma', 'React', 'Next.js', 'Tailwind CSS', 'Typescript', 'Supabase'],
     url: 'https://github.com/conley-tjahjono/dress-my-style',
     figmaUrl: 'https://www.figma.com/design/DOCHsYQxIOR7nOqdBMr1ea/DressMyStyle?node-id=1-2&p=f',
