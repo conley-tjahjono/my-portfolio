@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, GitHub } from 'react-feather';
+import { ExternalLink, Figma, GitHub } from 'react-feather';
 
 const projects = [
   {
@@ -9,6 +9,7 @@ const projects = [
     description: 'A web application for organizing clothes and to provide AI clothing powered suggestions',
     tags: ['Figma', 'React', 'Next.js', 'Tailwind CSS', 'Typescript', 'Supabase'],
     url: 'https://github.com/conley-tjahjono/dress-my-style',
+    figmaUrl: 'https://www.figma.com/design/DOCHsYQxIOR7nOqdBMr1ea/DressMyStyle?node-id=1-2&p=f',
     productionUrl: 'https://dress-my-style.vercel.app/'
   },
   {
@@ -90,6 +91,14 @@ const Projects = () => {
                       className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[theme(colors.surface-strong)] text-[theme(colors.text-secondary)] hover:text-[theme(colors.text-primary)] hover:bg-[theme(colors.surface-hover)] transition-colors duration-200"
                       >
                       <GitHub size={18} />
+                    </a>
+                    <a
+                      href={project.figmaUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[theme(colors.surface-strong)] text-[theme(colors.text-secondary)] hover:text-[theme(colors.text-primary)] hover:bg-[theme(colors.surface-hover)] transition-colors duration-200"
+                      >
+                      <Figma size={18} />
                     </a>
                     <a
                       href={project.productionUrl}
