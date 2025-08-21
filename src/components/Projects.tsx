@@ -10,7 +10,7 @@ const projects = [
     tags: ['Figma', 'React', 'Next.js', 'Tailwind CSS', 'Typescript', 'Supabase'],
     url: 'https://github.com/conley-tjahjono/dress-my-style',
     figmaUrl: 'https://www.figma.com/design/DOCHsYQxIOR7nOqdBMr1ea/DressMyStyle?node-id=1-2&p=f',
-    demoUrl: 'https://youtu.be/dRiY_Fz5yAo',
+    demoUrl: 'https://youtu.be/slWpUfO-fSo',
     productionUrl: 'https://dress-my-style.vercel.app/'
   },
   {
