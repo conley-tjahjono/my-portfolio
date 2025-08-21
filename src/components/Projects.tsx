@@ -15,7 +15,7 @@ const projects = [
   },
   {
     title: 'Goal Tracking',
-    description: 'A web application for teachers of deaf students to track their student’s Individualized Education Program goals',
+    description: 'A web application for teachers of deaf students to track their student\'s Individualized Education Program goals',
     tags: ['HTML', 'CSS', 'NodeJS', 'Javascript', 'MongoDB'],
     url: 'https://github.com/purdue-epics-isd/TRACK',
     productionUrl: ''
@@ -36,8 +36,32 @@ const projects = [
   // },
 ];
 
+// Helper function to convert YouTube URL to embeddable format
+const getEmbedUrl = (url: string): string | undefined => {
+  if (!url) return undefined;
+  
+  // Handle youtu.be links
+  if (url.includes('youtu.be/')) {
+    const videoId = url.split('youtu.be/')[1].split('?')[0];
+    return `https://www.youtube.com/embed/${videoId}`;
+  }
+  
+  // Handle youtube.com/watch links
+  if (url.includes('youtube.com/watch')) {
+    const videoId = url.split('v=')[1]?.split('&')[0];
+    return videoId ? `https://www.youtube.com/embed/${videoId}` : undefined;
+  }
+  
+  // If it's already an embed URL, return as is
+  if (url.includes('youtube.com/embed/')) {
+    return url;
+  }
+  
+  return undefined;
+};
+
 const Projects = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState(0);
 
   const toggleProject = (index: number) => {
     setOpenIndex(index);
@@ -93,27 +117,44 @@ const Projects = () => {
                       >
                       <GitHub size={18} />
                     </a>
-                    <a
-                      href={project.figmaUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[theme(colors.surface-strong)] text-[theme(colors.text-secondary)] hover:text-[theme(colors.text-primary)] hover:bg-[theme(colors.surface-hover)] transition-colors duration-200"
-                      >
-                      <Figma size={18} />
-                    </a>
-                    <a
-                      href={project.productionUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[theme(colors.surface-strong)] text-[theme(colors.text-secondary)] hover:text-[theme(colors.text-primary)] hover:bg-[theme(colors.surface-hover)] transition-colors duration-200"
-                      >
-                      <ExternalLink size={18} />
-                    </a>
+                    {project.figmaUrl && (
+                      <a
+                        href={project.figmaUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[theme(colors.surface-strong)] text-[theme(colors.text-secondary)] hover:text-[theme(colors.text-primary)] hover:bg-[theme(colors.surface-hover)] transition-colors duration-200"
+                        >
+                        <Figma size={18} />
+                      </a>
+                    )}
+                    {project.productionUrl && (
+                      <a
+                        href={project.productionUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[theme(colors.surface-strong)] text-[theme(colors.text-secondary)] hover:text-[theme(colors.text-primary)] hover:bg-[theme(colors.surface-hover)] transition-colors duration-200"
+                        >
+                        <ExternalLink size={18} />
+                      </a>
+                    )}
                   </div>
                   
                 </div>
-                <div className="bg-[theme(colors.surface-2)] text-[theme(colors.text-secondary)] flex items-center justify-center rounded-xl h-48 w-full">
-                  <span className="font-semibold">Demo WIP</span>
+                <div className="rounded-xl h-64 w-full overflow-hidden">
+                  {project.demoUrl && getEmbedUrl(project.demoUrl) ? (
+                    <iframe
+                      src={getEmbedUrl(project.demoUrl)}
+                      title={`${project.title} Demo`}
+                      className="w-full h-full rounded-xl"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  ) : (
+                    <div className="bg-[theme(colors.surface-2)] text-[theme(colors.text-secondary)] flex items-center justify-center rounded-xl h-full w-full">
+                      <span className="font-semibold">Demo WIP</span>
+                    </div>
+                  )}
                 </div>
               </motion.div>
             )}
